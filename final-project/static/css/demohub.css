@@ -1,0 +1,620 @@
+
+/*************************************************************************/
+/*--------------- CSS for main body and background image ----------------*/
+/*************************************************************************/
+
+body {
+    font-family: sans-serif;
+    margin-right: 8px;
+    border: 0px;
+    width: 100%;
+    padding: 10px;
+    padding-top: 50px;
+    background: #f4f6fc;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    /* min-width: 350px; */
+    min-width: 300px;
+}
+
+
+
+.common_bg_colour {
+  /* background-color: #cfebfcaa; */
+  background-color:rgba(177, 175, 175, 0.541);
+  border-radius: 15px;
+}
+
+.btn {
+  margin: 10px;
+}
+
+.btn-primary {
+  background-color: royalblue;
+}
+
+.badge {
+  margin: 8px
+}
+
+.error-warning {
+  background-color:#f3baba; 
+  border-radius: 7px; 
+  padding: 5px;
+  margin: 5px;
+}
+
+@media only screen and (min-width: 700px) {
+  body {
+    background-image: url('../../static/images/image_002.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+/*************************************************************************/
+/*-------- CSS for banner image and fiter text, adapted from :  ---------*/
+/*----- https://www.w3schools.com/howto/howto_css_hero_image.asp --------*/
+/*************************************************************************/
+
+.bannerImages {
+  /* Position and center the image to scale nicely on all screens and constrain a specific height of viewport */
+  height: 30vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.bannerImage1 {
+    /* Uses "linear-gradient" to darken background effect to the image. */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url('../../static/images/Mystical-Gaming-Paradise.jpg');
+}
+
+.bannerImage2 {
+  /* Uses "linear-gradient" to darken background effect to the image. */
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url('../../static/images/Neon-Code-Hub.jpg');
+}
+
+.bannerImage3 {
+  /* Uses "linear-gradient" to darken background effect to the image. */
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url('../../static/images/Gothic-Gaming-Cathedral.jpg');
+}
+
+/* Place text in the middle of the image and add darker background */
+.bannerText {
+    /* background-color:rgba(25, 25, 25, 0.7); */
+    background-color:rgb(2, 36, 100, 0.9);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 3rem;
+    padding-top: 1.4rem;
+    padding-bottom: 0.7rem;
+    border-radius: 50px;
+    border-color: #ffffff;
+    border-style: groove;
+    border-width: 2px;
+    width:max-content;
+    max-width: 75%;
+    text-shadow: white 1px 1px 2px;
+}
+
+/* For adjusting size of filter text in banner */
+@media only screen and (min-width: 601px) {
+    .bannerText {
+      font-size: 1.4rem;
+    }
+}
+
+@media only screen and (min-width: 1101px) {
+    .bannerText {
+      font-size: 1.75rem;
+    }
+}
+
+@media only screen and (min-width: 1401px) {
+    .bannerText {
+      font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bannerText {
+      font-size: 1rem;
+    }
+}
+
+
+/*************************************************************************/
+/*------------------ CSS for navigation bar and menus -------------------*/
+/*************************************************************************/
+
+/* css for demohub logo */
+#logo {
+    height: 70px;
+    width: 70px;
+    vertical-align: middle;
+    padding: 1px;
+}
+
+/* css for title of application - demohub */
+#application_title {
+    vertical-align: middle;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+/* css for text of navbar link menu items */
+.nav_link {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.nav-item {
+    align-content: center;
+    max-width: 300px;
+    padding-top: 5px; padding-bottom: 5px;
+    font-size: 14px;
+}
+
+/* css for text of navbar dropdown menu heading */
+#navbarDropdownMenuLink  {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+#navigation {
+    width: 100%;
+}
+
+#searchbar {
+    padding-right: 3px;
+}
+
+/* For adjusting size of DemoHub title */
+@media only screen and (min-width: 351px) {
+  #application_title {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1301px) {
+  #application_title {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #application_title {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1301px) {
+  #navbarDropdownMenuLink, .nav-item, .nav_link {
+    font-size: 16px;
+  }
+}
+
+/*************************************************************************/
+/*--------------------------- CSS for footer ----------------------------*/
+/*************************************************************************/
+
+.footer {
+    font-size: 12px;
+}
+
+.columnfooter {
+    padding: 10px;
+}
+
+
+/*************************************************************************/
+/*----------------------- CSS for friends column ------------------------*/
+/*************************************************************************/
+
+/* from https://www.w3schools.com/howto/howto_css_image_avatar.asp */
+.avatar {
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.friends-title {
+  /* background-color:rgb(247, 240, 232); */
+  background-color:rgb(2, 36, 100);
+  color: white;
+  padding: 7px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.603), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: block;
+  margin-left: 10px; margin-right: 10px; margin-bottom: 15px;
+}
+
+#friends-sticky {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    top: 100px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#friends-content {
+    height: 75vh;
+}
+
+#friends-content a {
+  margin-left: 2px;
+  margin-right: 4px;
+  font-size: 16px;
+  color:darkblue;
+  display: block;
+  text-decoration: none;
+}
+
+.friends-table-row {
+  background-color: #ddd;
+  border: #c5bb96;
+  border-inline-end: #c5bb96;
+  margin-left: 1px; 
+  margin-right: 1px; 
+  padding-top: 2px; 
+  padding-bottom: 2px; 
+  width: 100%; 
+  margin-bottom: 3px; 
+  border-radius: 7px;
+}
+
+.friends-table-row:hover {
+  background-color: #c5bb96;
+}
+
+.friends-online-status {
+  font-size:18px; 
+  margin: 0; 
+  position: absolute; 
+  left: 50%; 
+  top: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+/* For adjusting width of friends and demos column on small width devices*/
+@media only screen and (min-width: 1011px) {
+    .friends {
+      width: 30%;
+    }
+
+    .demos {
+        width: 70%
+    }
+}
+
+@media only screen and (max-width: 1010px) {
+    .friends {
+      width: 100%;
+    }
+
+    .demos {
+        width: 100%;
+    }
+}
+
+
+/*************************************************************************/
+/*--------------------- CSS for collaboration and project page ----------------------*/
+/*************************************************************************/
+
+.calendar {
+  width: 100%;
+  margin: auto;
+  font-size: 12px;
+  font-family: Verdana, sans-serif;
+}
+
+.month {
+  /* background: #1abc9c; */
+  background-color:rgb(2, 36, 100);
+  color: white;
+}
+
+.mon, .tue, .wed, .thu, .fri, .sat, .sun {
+  background-color:#ddd;
+}
+
+.calendar tr, .calendar td {
+  border: 1px solid black;
+}
+
+.calendar th {
+  padding: 5px;
+  text-align: center;
+  
+}
+
+.calendar td {
+  width: 14%;
+  height: 100px;
+  padding: 2px 2px 2px 2px;
+  background-color: white;
+  vertical-align: top;
+}
+
+.date {
+  background: #eee;
+}
+
+.calendar ul {
+  padding: 2px;
+  margin-bottom:0
+}
+
+.calendar li {
+  font-size: 10px;
+  list-style-type: none;
+  background-color: #c4fcc7;
+  margin-bottom: 1px;
+}
+
+.calendar li:hover {
+  background-color: #abdaae;
+}
+
+.calendar li:nth-child(odd) {
+  font-size: 10px;
+  list-style-type: none;
+  background-color: #f1e4b6;
+  margin-bottom: 1px;
+}
+
+.calendar li:nth-child(odd):hover {
+  background-color: #c5bb96;
+}
+
+.calendar a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (min-width: 1401px) {
+  .month {font-size: 26px;}
+  .mon, .tue, .wed, .thu, .fri, .sat, .sun {font-size: 20px;} 
+  .date {font-size: 16px;}
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width: 1400px) {
+  .month {font-size: 20px;}
+  .mon, .tue, .wed, .thu, .fri, .sat, .sun {font-size: 16px;} 
+  .date {font-size: 14px;}
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width: 700px) {
+  .month {font-size: 16px;}
+  .mon, .tue, .wed, .thu, .fri, .sat, .sun {font-size: 13px;} 
+  .date {font-size: 12px;}
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* .form input, .form select, .form textarea {
+  border-radius: 5px;
+  border: 1px solid #17a2b8;
+  outline: none;
+  background: none;
+  padding: 5px;
+  width: 100%;
+} */
+
+/* For adjusting width of calendar/events and chat columns on small width devices*/
+@media only screen and (min-width: 1171px) {
+  .chat_column {
+    width: 40%;
+  }
+
+  .calendar_column {
+      width: 60%
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .chat_column {
+    width: 100%;
+  }
+
+  .calendar_column {
+      width: 100%;
+  }
+}
+
+
+
+/*************************************************************************/
+/*------------------------- CSS for other stuff -------------------------*/
+/*************************************************************************/
+
+.content {
+    padding-left: 10px;
+    float: left;
+}
+
+.demo-title {
+  /* background-color:rgb(247, 240, 232); */
+  background-color:rgb(2, 36, 100);
+  color: white;
+  padding: 5px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.603), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.demo-title:hover {
+  background-color:rgb(51, 85, 148);
+}
+
+
+#demoVideo {
+    border-radius: 15px;
+    border-style: ridge;
+    aspect-ratio: 3/2;
+    background-color: black;
+}
+
+.demoVideo-column {
+  /* min-width: 340px; */
+  min-width: 300px;
+  max-width: 600px;
+}
+
+
+/* Place text in the middle of the image and add darker background */
+.missingVideoText {
+  background-color:rgb(2, 36, 100, 0.9);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 0.7rem;
+  border-radius: 10px;
+  border-color: #ffffff;
+  border-style: groove;
+  border-width: 1px;
+  width:max-content;
+  max-width: 75%;
+  font-size: 14px;
+}
+
+.comment_avatar {
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.comment-box {
+  border-radius: 15px; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.comment-box::after {
+	content: "";
+	position: absolute;
+	height: 20px;
+	width: 3%;
+	top: -20px;
+	right: 90%;
+	background-color: #ffffff;
+	clip-path: polygon(0 100%, 100% 100%, 0 0);
+}
+
+
+/* demo likes, favourites and ratings data */
+#likes01 {font-size:18px; color:royalblue; display: inline-block;}
+#likes02 {font-size:16px; font-weight: normal; color:black;}
+
+#favourites01 {font-size:18px; color:red; display: inline-block;}
+#favourites02 {font-size:16px; font-weight: normal; color:black;}
+
+#rating01 {font-size:18px; color:rgb(255, 187, 0); display: inline-block;}
+#rating02 {font-size:16px; font-weight: normal; color:black;}
+
+/* demo likes, favourites and ratings badges */
+.badge-like {
+  
+  background-color:royalblue;
+  display: inline-block;
+}
+
+.badge-favourite {
+  
+  display: inline-block;
+}
+
+.badge-rating {
+  color: black;
+  background-color:rgb(255, 187, 0); 
+  display: inline-block;
+}
+
+
+.badge-box {
+  font-size: 1em;
+}
+
+.badge-container {
+  container-type: inline-size;
+  container-name: badges-container;
+}
+
+@container badges-container (width < 120px) {
+  .badge-box {font-size: 0.8em;}
+  #likes01 {font-size:14px;}
+  #likes02 {font-size:12px;}
+  #favourites01 {font-size:14px;}
+  #favourites02 {font-size:12px;}
+  #rating01 {font-size:14px;}
+  #rating02 {font-size:12px;}
+}
+
+@container badges-container (width < 100px) {
+  .badge-box {font-size: 0.6em;}
+  #likes01 {font-size:12px;}
+  #likes02 {font-size:10px;}
+  #favourites01 {font-size:12px;}
+  #favourites02 {font-size:10px;}
+  #rating01 {font-size:12px;}
+  #rating02 {font-size:10px;}
+}
+
+
+.chartsImage {
+  /* Position and center the image to scale nicely on all screens and constrain a specific height of viewport */
+  aspect-ratio: 1/1;
+  max-width: 1000px;
+  background-position: center;
+  background-size:cover;
+  position: relative;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+/* Place text in the middle of the image and add darker background */
+.chartsText {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  width: 95%;
+  max-width: 800px;
+}
+

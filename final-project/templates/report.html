@@ -1,0 +1,35 @@
+{% extends "./base.html" %}
+
+{% block content %}
+    <!-- Add surveyform -->
+    <div class="col-sm-12">
+        <hr><h2><b>Report...</b></h2><hr>
+    </div><br>
+    <div class="container-fluid common_bg_colour" style="max-width: 800px; padding: 40px;">
+        <div class="row g-3 align-items-center">
+            <div class="col-sm-12">
+                <p>This page is for reporting inappropriate content.</p><br>
+                <form 
+                    id="report_form" 
+                    method="post" 
+                    action="/report/{{demoid}}"
+                    enctype="multipart/form-data"
+                >
+                    {% csrf_token %}
+                    <div class="col-sm-12" >
+                        <p><b>Demo Title:&nbsp;</b>{{ demo_title.title }}</p><br>
+
+                        <p><b>{{ report_form.report.label }}: </b>
+                        Please provide a description of the issue.</p>
+                        {{ report_form.report }}<br>
+
+                    </div><br><br>
+                    <button type="submit" class="btn btn-success" name="report_form">Submit</button>
+                    <button type="reset" name="reset" class="btn btn-warning" style="margin: 10px;">&nbsp;Clear&nbsp;</button>&nbsp;
+                    <a class="btn btn-danger" href="/" role="button">Home</a>
+                    <br><br>
+                </form>
+            </div>
+        </div>
+    </div><br>
+{% endblock %}
